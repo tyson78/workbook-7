@@ -1,5 +1,7 @@
 USE northwind;
-/* Workbook 7 - */
+
+/* Workbook 7 - exercise-2 */
+
 
 -- Q1
 SELECT * FROM Products;
@@ -26,3 +28,12 @@ ORDER BY UnitPrice DESC;
 SELECT ProductName, UnitPrice, UnitsInStock FROM Products
 WHERE UnitsInStock >= '100'
 ORDER BY UnitPrice DESC, ProductName;
+
+-- Q7
+SELECT * FROM Products
+WHERE UnitsInStock = 0 AND UnitsOnOrder >= 1
+ORDER BY ProductName;
+
+
+
+
